@@ -1,14 +1,13 @@
 import React, { Component } from "react";
-import "./sidebar.css";
-import Sidebarlink from "./sidebarlink.js";
+import "./Sidebar.css";
+import Sidebarlink from "./SidebarLink.js";
 
 class Sidebar extends Component {
   render() {
     return (
       <div className="Sidebar">
-        <Sidebarlink text="Hiring" />
-        <Sidebarlink text="Interviews" />
-
+        <Sidebarlink text="Hiring" route="/hiring" otro="bleh" />
+        <Sidebarlink text="Interviews" route="/interviews" />
       </div>
     );
   }

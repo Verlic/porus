@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import "./sidebarlink.css";
+import "./SidebarLink.css";
+import { Link } from "react-router-dom";
 
 class Sidebarlink extends Component {
   render() {
     return (
       <div className="Sidebarlink">
-        <a href="#about">{this.props.text}</a>
+        <Link to={this.props.route}>{this.props.text}</Link>        
       </div>
     );
   }

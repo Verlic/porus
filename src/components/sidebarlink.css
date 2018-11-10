@@ -1,0 +1,7 @@
+.Sidebar a:hover {
+  background-color: rgb(144, 186, 194);
+}
+
+.Sidebar .Active {
+  background-color: rgb(144, 186, 194);
+}
