@@ -1,0 +1,17 @@
+[
+    {
+        "id": "awesome-note",
+        "title": "Awesome Note",
+        "body": "This is a body"
+    },
+    {
+        "id": "hormigas",
+        "title": "Paper de Hormigas",
+        "body": "Messi, por la pulga no por hormiga boludo"
+    },
+    {
+        "id": "otro",
+        "title": "El Otro",
+        "body": "El Otro Yo"
+    }
+]

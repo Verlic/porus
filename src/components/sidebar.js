@@ -6,8 +6,7 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="Sidebar">
-        <Sidebarlink text="Hiring" route="/hiring" otro="bleh" />
-        <Sidebarlink text="Interviews" route="/interviews" />
+        {this.props.notes.map(note => <Sidebarlink key={note.id} text={note.title} route={"/notes/" + note.id} />)}
       </div>
     );
   }
