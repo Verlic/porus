@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Oxygen:300");
 
-body {
+body, input {
   font-family: "Oxygen", sans-serif;
 }
 
