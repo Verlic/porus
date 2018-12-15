@@ -24,6 +24,13 @@ class Content extends Component {
     this.setState({ note: newNote });
   }
 
+  onBodyChange(value) {
+    var newNote = Object.assign({}, this.state.note);
+
+    newNote.body = value;
+    this.setState({ note: newNote });
+  }
+
   render() {
     if (!this.state.note) {
       return (
@@ -39,7 +46,10 @@ class Content extends Component {
           text={this.state.note.title}
           onTextChange={value => this.onTitleChange(value)}
         />
-        <Body text={this.state.note.body} />
+        <Body
+          text={this.state.note.body}
+          onTextChange={value => this.onBodyChange(value)}
+        />
       </div>
     );
   }

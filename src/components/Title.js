@@ -7,7 +7,7 @@ class Title extends Component {
     this.state = { isEditing: false };
   }
 
-  edit(event) {
+  edit() {
     this.setState({ isEditing: true });
   }
 
