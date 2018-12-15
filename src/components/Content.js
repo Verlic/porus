@@ -13,8 +13,15 @@ class Content extends Component {
     this.state = { note: client.getNote(this.props.match.params.note) };
   }
 
+  componentWillReceiveProps(newProps) {
+    this.setState({ note: client.getNote(newProps.match.params.note) });
+  }
+
   onTitleChange(value) {
-    this.setState({note:{title:value}});
+    var newNote = Object.assign({}, this.state.note);
+
+    newNote.title = value;
+    this.setState({ note: newNote });
   }
 
   render() {
@@ -30,7 +37,7 @@ class Content extends Component {
       <div id="content">
         <Title
           text={this.state.note.title}
-          onTextChange={(value) => this.onTitleChange(value)}
+          onTextChange={value => this.onTitleChange(value)}
         />
         <Body text={this.state.note.body} />
       </div>
